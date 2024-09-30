@@ -1,0 +1,91 @@
+:root {
+	--green: hsl(75, 94%, 57%);
+	--white: hsl(0, 0%, 100%);
+	--grey-700: hsl(0, 0%, 20%);
+	--grey-800: hsl(0, 0%, 12%);
+	--grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+	font-family: "inter";
+	src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+	list-style-type: none;
+	color: var(--white);
+	font-family: "inter";
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--grey-900);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.person-card {
+	background-color: var(--grey-800);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 15rem;
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+.portrait {
+	border-radius: 50%;
+	max-width: 30%;
+}
+
+.info {
+	h1 {
+		font-size: 1.8rem;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		color: var(--green);
+	}
+}
+
+.description {
+	margin-top: 1rem;
+	font-weight: 400;
+}
+
+.external-links {
+	padding: 0;
+	min-width: 100%;
+}
+
+.external-links > li {
+	background-color: var(--grey-700);
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+}
+
+.external-links > li:last-child {
+	margin-bottom: 0rem;
+}
+
+li:hover {
+	background-color: var(--grey-900);
+	border: 1px solid var(--green);
+	transition: 500ms;
+	color: var(--green);
+}
+
+li:active {
+	background-color: var(--grey-800);
+}
